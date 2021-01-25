@@ -104,3 +104,11 @@ footer {
     background-color: #717171;
 }
 
+select{
+    color: white;
+    background-color: blue;
+    border: none;
+    font-family: "Arial Black", serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
