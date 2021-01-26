@@ -12,15 +12,16 @@ section{
 .nav {
     margin: 0;
     width: 100%;
+    overflow: auto;
 }
 .nav-ul{
     background-color: blue;
     list-style-type: none;
     height: 50px;
-    overflow: hidden;
-    display: block;
+    margin: 0;
 }
 .nav-li{
+    float: left;
     display: inline-block;
     width: 12%;
     height: 100%;
@@ -34,7 +35,7 @@ section{
     font-size: 9px;
     text-decoration: none;
     font-family: "Arial Black", serif;
-    margin: 5px 0;
+    margin: 5px;
 }
 .nav-li>a:hover{
     background-color: #CCCCCC;
