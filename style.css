@@ -19,6 +19,7 @@ section{
     list-style-type: none;
     height: 50px;
     margin: 0;
+    padding-left: 0;
 }
 .nav-li{
     float: left;
@@ -26,20 +27,23 @@ section{
     width: 12%;
     height: 100%;
 }
+.nav-li:nth-child(2){
+    width: 15%;
+}
 .nav-li>a{
     display: inline-block;
     width: 100%;
     color: white;
     text-align: center;
     line-height: 40px;
-    font-size: 9px;
+    font-size: 11px;
     text-decoration: none;
     font-family: "Arial Black", serif;
     margin: 5px;
 }
 .nav-li>a:hover{
     background-color: #CCCCCC;
-    font-size: 10px;
+    font-size: 12px;
 }
 img{
     padding-top: 10px;
