@@ -13,7 +13,6 @@ section{
     margin: 0;
     width: 100%;
     overflow: auto;
-    z-index: 999;
 }
 .nav-ul{
     background-color: blue;
@@ -105,4 +104,32 @@ footer {
 }
 .active {
     background-color: #717171;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: blue;
+    color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 15px;
+}
+.dropdown-content a {
+    color: white;
+    margin: 8px;
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+.dropdown-content a:hover{
+    font-size: 17px;
+    background-color:#CCCCCC ;
 }
