@@ -1,7 +1,9 @@
+//Slides Storing Name of Images.
 const slides = [];
 for(let i=0;i<26;i++){
     slides.push(`${i}.jpg`);
 }
+//name storing Name of person in corresponding image.
 const name = [
     "Prof. SC Saxena, Vice-chancellor, JIIT with Prof. Sundaraja Sitharama Iyengar, Program Chair in IC3-2019",
     "Prof. Sartaj Sahni, General Co-Chair, IC3, UFL, USA",
@@ -31,6 +33,7 @@ const name = [
     "Prof. Viktor K. Prasanna, University of southern California, in IC3-2009"
 ];
 
+//Creating Slideshow of image which moves on its own and change image after 3s. and placing names under image and changing active dot.
 let slideIndex = -1;
 showSlides();
 
@@ -46,13 +49,9 @@ function showSlides() {
     dots[slideIndex].className += " active";
     setTimeout(showSlides, 3000);
 }
-
-// const btnContainer = document.getElementsByClassName("nav-ul");
-
-// Get all buttons with class="btn" inside the container
+//Highlighting button after clicking it.(Adding Active Class).
 const btns = document.getElementsByClassName("nav-li");
 
-// Loop through the buttons and add the active class to the current/clicked button
 for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function() {
         const current = document.getElementsByClassName("active");
