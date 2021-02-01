@@ -20,6 +20,7 @@ section{
     height: 50px;
     margin: 0;
     padding-left: 0;
+    overflow: hidden;
 }
 .nav-li{
     float: left;
@@ -28,7 +29,7 @@ section{
     height: 100%;
 }
 .nav-li:nth-child(2){
-    width: 15%;
+    width: 16%;
 }
 .nav-li>a{
     display: inline-block;
@@ -41,7 +42,7 @@ section{
     font-family: "Arial Black", serif;
     margin: 5px;
 }
-.nav-li>a:hover{
+.nav-li:hover{
     background-color: #CCCCCC;
     font-size: 12px;
 }
@@ -119,6 +120,7 @@ footer {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 15px;
+    font-family: Arial, serif;
 }
 .dropdown-content a {
     color: white;
@@ -134,7 +136,7 @@ footer {
     list-style-type: none;
 }
 .dropdown-content a:hover{
-    font-size: 17px;
+    font-size: 15px;
     background-color:#CCCCCC ;
 }
 #name-slideshow{
