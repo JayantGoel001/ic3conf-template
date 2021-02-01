@@ -31,20 +31,19 @@ const name = [
     "Prof. Viktor K. Prasanna, University of southern California, in IC3-2009"
 ];
 
-let slideIndex = 0;
+let slideIndex = -1;
 showSlides();
 
 function showSlides() {
     let i;
     const dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
     slideIndex=(slideIndex + 1)%slides.length;
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex].style.display = "block";
+    document.getElementById("img-slideshow").src ="images/"+slides[slideIndex];
+    document.getElementById("name-slideshow").innerText = name[slideIndex];
     dots[slideIndex].className += " active";
-    setTimeout(showSlides, 5000); // Change image every 2 seconds
+    setTimeout(showSlides, 3000);
 }
+
