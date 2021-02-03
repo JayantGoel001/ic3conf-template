@@ -4,12 +4,14 @@ body{
     margin: 0;
     padding: 0;
 }
+/*Giving Styles and color to section*/
 section{
     margin: 0 auto;
     max-width: 60%;
     background-color: white;
     height: max-content;
 }
+/*Giving Color to nav bar*/
 .nav {
     margin: 0;
     width: 100%;
@@ -29,6 +31,7 @@ section{
     width: 12%;
     height: 100%;
 }
+/*Giving extra space to cover whole text*/
 .nav-li:nth-child(2){
     width: 16%;
 }
